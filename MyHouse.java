@@ -15,6 +15,10 @@ public class MyHouse
     private Square base;
     private Square window;
     private Square window2;
+    private Tree tree;
+    private Tree tree2;
+    
+    
     
     /**
      * The job of a constructor is to intialize all the instance variables 
@@ -28,6 +32,9 @@ public class MyHouse
         base = new Square();
         window = new Square();
         window2 = new Square();
+        tree = new Tree(300, 100);
+        tree2 = new Tree (200,150);
+        
         
     }
 
@@ -36,8 +43,6 @@ public class MyHouse
      */
     public void drawHouse()
     {
-        // put the roof in position 
-        
         roof.moveVertical(100);
         roof.changeSize(30, 120);
         roof.moveHorizontal(50);
@@ -63,5 +68,6 @@ public class MyHouse
         doorBottom.moveHorizontal(10);
         doorBottom.changeColor("blue");
         doorBottom.makeVisible();
+        
     }
 }

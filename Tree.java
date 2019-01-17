@@ -40,20 +40,29 @@ public class Tree
     public void drawTree(int x, int y)
     {
         // put your code here
+        leaf1.moveHorizontal(x);
+        leaf1.moveVertical(y);
+        leaf2.moveHorizontal(x);
+        leaf2.moveVertical(y);
+        leaf3.moveHorizontal(x);
+        leaf3.moveVertical(y);
+        trunk.moveHorizontal(x);
+        trunk.moveVertical(y);
+        
         leaf2.moveVertical(20);
         leaf3.moveVertical(40);
         leaf1.changeSize(30, 60);
+        leaf1.makeVisible();
         leaf2.changeSize(30, 60);
+        leaf2.makeVisible();
         leaf3.changeSize(30, 70);
+        leaf3.makeVisible();
         trunk.moveHorizontal(-20);
         trunk.moveVertical(35);
         trunk.changeSize(20);
-        leaf1.makeVisible();
-        leaf2.makeVisible();
-        leaf3.makeVisible();
         trunk.makeVisible();
+       
         
-        // translate the tree to the specified location
         
         
     }
